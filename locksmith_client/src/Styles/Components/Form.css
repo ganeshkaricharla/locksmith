@@ -1,0 +1,68 @@
+.form_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 300px);
+}
+
+.form_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 25px;
+  width: 80%;
+  max-width: calc(100vw-100px);
+}
+
+.form_input {
+  width: 80%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.form_password_container {
+  position: relative;
+  width: 80%;
+}
+.form_string_input {
+  height: 100px;
+}
+.form_button {
+  width: 80%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #595a59;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form_button:hover {
+  background-color: #b6c2b7;
+}
+
+.form_output_txt {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  width: 80%; /* Decryption output occupies 80% of the form's width */
+  /* text-align: center; */
+  font-size: 16px;
+  color: #333;
+  visibility: hidden;
+  min-height: 300px;
+}
+
+.form_output_txt:not(:empty) {
+  visibility: visible;
+}
